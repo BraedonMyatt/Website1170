@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column; 
+}
+header{
+    background-color: red;
+    color: white;
+}
+nav{
+    display: flex;
+    border: 3px solid black;
+}
+nav > div{
+    width: 50%;
+}
+#MPLink{
+    border-right: 3px solid black;
+}
+#Body{
+    display: grid; 
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+}
+#writing{
+    grid-area: 1 / 1 / 2 / 2;
+}
+#PianoVideo{
+    grid-area: 1 / 2 / 2 / 3;
+}
+a:hover{
+    background-color: lightblue;
+}
+h3{
+    border-bottom: 3px solid black;
+}
+h3 ~ div{
+    font-style: italic;
+}
+h3 + div{
+    color: black;
+}

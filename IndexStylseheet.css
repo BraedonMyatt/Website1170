@@ -1,0 +1,67 @@
+.Webpage{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: "Title Title Title Title"
+                         "NM NM NM NM"
+                         "AboutMe AboutMePhoto ExperiencePhoto Experience" 
+                         "Contact Contact Contact Contact";
+    align-items: center;
+}
+#Head{
+    grid-area: Title;
+    color: white;
+    background-color: red;
+    font-size: 12pt;
+    border-bottom: 3px solid black;
+}
+.Navigation{
+    grid-area: NM;
+    display: flex;
+    border: 3px solid black;
+    border-top: 3px none black;
+    justify-content: space-around;
+    width: 100%;
+}
+#AboutMeNav{
+    border-right: 3px solid black;
+    width: 50%;
+}
+#ExperienceNav{
+    width: 50%;
+}
+#WhoAmI{
+    grid-area: AboutMe;
+}
+#ABMPhotoContainer{
+    grid-area: AboutMePhoto;
+}
+#PhotoMe{
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid black;
+}
+#EXPphoto{
+    grid-area: ExperiencePhoto;
+    margin: 10px;
+    padding: 5px;
+}
+#EXP{
+    grid-area: Experience;
+}
+.ContactSection{
+    grid-area: Contact;
+    text-align: center;
+    border-top: 3px solid black;
+}
+.FooterContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+* a:hover{
+    background-color: lightblue;
+}

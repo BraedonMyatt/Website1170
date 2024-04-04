@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta Charset="UTF-8">
+    <title>AboutMe</title>
+    <link href="AboutMeStylesheet.CSS" rel="Stylesheet">
+</head>
+<body>
+    <header id="HR">
+        <h1>About Me</h1>
+    </header>
+    <nav>
+        <div id="MPLink"><a href="Index.html">Main Page</a></div>
+        <div><a href="Experience.html">Experience</a></div>
+    </nav>
+    <div id="Body">
+        <div id="writing">
+            <h3>About Me</h3>
+            <div id="paragraph">Ever since I was young Ive always been interested in not only playing video games but also the mechanics behind them, This interest created the love for computer science that I have today. Outside of schoolwork and coding Im normally in the gym or playing piano. I grew up playing soccer and loved being physically active. I eventually started working out and found that I enjoyed that even more. About half a year ago I decided to start playing piano and will spend most of my free time doing that.</div>
+        </div>
+        <div id="PianoVideo"><video controls><source src="PianoPlay.mp4" alt="Me playing a piece on piano"></video></div>
+    </div>
+    <form id="userInput">
+        <div class="inputGroup">
+            <label for="human">If human check to the right:</label>
+            <input type="radio" id="human" />
+            <div class="error" id="humanError"> </div>
+        </div>
+        <div class="inputGroup">
+            <label for="robot">If human Check below:</label><br>
+            <input type="checkbox" id="robot" name="robot" />
+            <div class="error" id="robotError"> </div>
+        </div>
+        <div class="inputGroup">
+            <label for="pet">Do you have a pet?</label><br>
+            <input type="text" id="pet" name="pet" />
+            <div class="error" id="petError"> </div>
+        </div>
+        <div class="inputGroup">
+            <label for="advice">Advice?</label><br>
+            <textarea id="advice" name="advice" row="4" col="200">Advice Here...</textarea>
+            <div class="error" id="adviceError"> </div>
+        </div>
+        <div class="inputGroup">
+            <label for="suggestions">Website Suggestions?</label><br>
+            <textarea id="suggestions" name="suggestions" rows="4" col="200">Suggestions here...</textarea>
+            <div class="error" id="suggestionsError"> </div>
+        </div>
+        <button id="formSub" type="submit">submit</button>
+        <div id="valid">Not Submitted</div>
+    </form>
+    <br>
+</body>
+<footer>
+    <button id="style1">Change Style</button>
+    <button id="style2">Change Style</button>
+    <button id="originalStyle">Original Style</button>
+</footer>
+<script src="AboutMeScript.js"></script>
+</html>
